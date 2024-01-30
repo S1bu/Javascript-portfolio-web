@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:monospace ;
+}
+ 
+:root{
+    ----main-color:white;
+    ----20percnter:rgb(10, 136, 58);
+}
+/* ----------------------------- */
+/* ----hOME--------- */
+/* ----------------------------- */
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+background-color: var(----main-color);
+z-index: 90;
+}
+
+.row{
+    width: 100%;
+}
+
+.nav-links{
+    text-align: right;
+    float: right;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+
+.home-image{
+    text-align: center;
+    /* background-image: url(''); */
+    background-size: cover;
+    /* background-color: black; */
+}
+.home-image img{
+width: 250px;
+box-shadow: 10px 10px black;
+background-color: var(----20percnter);
+border: 1px solid black;
+animation: shakeY 30s infinite;
+}
+
+.name{
+    font-weight: 900;
+    font-size: 60px;
+    margin-top: 30%;
+}
+ 
+#home .col:nth-child(1){
+    margin-top: 5%;
+}
+.button-holder button{
+    width: 50%;
+    background-color: white;
+    color: black;
+    margin-top: 4%;
+    padding: 10px;
+    border: none;
+    border: rgba(128, 128, 128, 0.268) 1px solid;
+    border-radius: 5px;
+}
+.button-holder button:hover{
+    color: white;
+    background-color: black;
+}
+ 
+.social-icons a{
+    font-size:20px;
+    text-align: none;
+    color: black;
+}
+
+
+/* ----------------------------- */
+/* ----About section---------- */
+/* ----------------------------- */
+ #About{
+    margin-top: 30%;
+    /* border: 1px solid red; */
+ }
+
+ 
+  
+/* ----------------------------- */
+/* ----Skills---------- */
+/* ----------------------------- */
+#Skills{
+width: 100%;
+}
+.skills-card-holder{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+ }
+
+.skill-image-holder img{
+    width: 50px;
+    border-radius:50% ;
+}
+.Skills-card{
+    width:90%;
+    border-radius: 5px;
+   border: rgba(128, 128, 128, 0.268) 1px solid;
+   padding: 20px;
+   margin: 1%;
+}
+.Skill-level{
+    float: right;
+    background-color: var(----20percnter);
+    padding: 10px;
+    color: white;
+    box-shadow: 5px 5px black;
+}
+.Skills-card h3{
+    font-weight: 900;
+}
+
+/* ----------------------------- */
+/* ----TESTIMONIALS---------- */
+/* ----------------------------- */
+#Testimonials{
+    margin-top: 40%;
+    /* background-color: var(----20percnter); */
+    padding: 10px;
+    /* border: var(----20percnter) 1px solid; */
+    border-top: 30deg;
+}
+
+.slide-show{
+    margin-top:10% ;
+    width: 100%;
+    margin: 10% 15%;
+    width: 80%;
+}
+
+.card{
+   width: 80%;
+   /* margin: 5% 0; */
+}
+
+.card h1{
+    font-weight: 900;
+    margin-left: 30%;
+}
+.card p{
+    margin-left: 30%;
+}
+
+.slide-show-buttons{
+    text-align: center;
+    margin: 5px 0;
+}
+.slide-show-buttons button{
+    width: 30%;
+    padding:8px ;
+    border: none;
+    background-color:white;
+}
+ 
+.slide-show-details{
+    text-align: center;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+    top: -100px;
+    left: -20px;
+    animation: shakeY 30s infinite;
+    box-shadow: 10px 10px black;
+background-color: var(----20percnter);
+border: 1px solid black;
+}
